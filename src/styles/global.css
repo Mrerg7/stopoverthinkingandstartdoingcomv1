@@ -51,15 +51,16 @@
   }
 
   .hero-bg {
-    background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(249, 115, 22, 0.12), transparent 50%),
-                radial-gradient(ellipse 60% 50% at 85% 60%, rgba(251, 146, 60, 0.06), transparent 50%),
-                linear-gradient(180deg, #020617 0%, #0f172a 100%);
+    background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), url('https://imagedelivery.net/-sPAUAWeA405NiWJ0SNIQA/9265571b-9c73-48a6-e65d-b36f32b7f200/public');
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
   }
 
   .action-bg {
-    background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(249, 115, 22, 0.08), transparent 60%),
-                linear-gradient(180deg, #020617 0%, #0f172a 100%);
+    background-image: linear-gradient(rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.95)), url('https://imagedelivery.net/-sPAUAWeA405NiWJ0SNIQA/9ee5e308-cd84-4877-31d5-4723c022f700/public');
+    background-size: cover;
+    background-position: center;
   }
 
   .value-card {
