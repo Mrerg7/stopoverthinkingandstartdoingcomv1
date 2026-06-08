@@ -9,19 +9,6 @@ export const SITE = {
   updated: '2026-06-01',
 } as const;
 
-export const CF_IMAGES = {
-  accountHash: '-sPAUAWeA405NiWJ0SNIQA',
-  heroId: 'edd59d02-c4aa-4db1-5554-e86e27715200',
-  variant: 'public',
-} as const;
-
-export function cfImageUrl(
-  imageId: string,
-  variant: string = CF_IMAGES.variant,
-): string {
-  return `https://imagedelivery.net/${CF_IMAGES.accountHash}/${imageId}/${variant}`;
-}
-
 export const ACQUISITION_MAILTO = `mailto:${SITE.acquisitionEmail}?subject=${encodeURIComponent(
   `${SITE.name} — Domain Acquisition Inquiry`,
 )}&body=${encodeURIComponent(
