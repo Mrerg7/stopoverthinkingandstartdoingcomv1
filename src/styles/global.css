@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #f97316;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-200 antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+
+  .section-header {
+    @apply text-[3.25rem] leading-[1.05] font-bold tracking-[-0.04em];
+  }
+
+  .premium-gradient {
+    background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .nav-scrolled {
+    background-color: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(20px);
+  }
+
+  .nav-link {
+    transition: color 0.2s ease;
+  }
+
+  .nav-link:hover {
+    color: #f97316;
+  }
+
+  .hero-bg {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), url('https://imagedelivery.net/-sPAUAWeA405NiWJ0SNIQA/edd59d02-c4aa-4db1-5554-e86e27715200/public');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .action-bg {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.95)), url('https://imagedelivery.net/-sPAUAWeA405NiWJ0SNIQA/edd59d02-c4aa-4db1-5554-e86e27715200/public');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .value-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+  }
+
+  .use-case-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .use-case-card:hover {
+    transform: translateY(-4px);
+    border-color: #f97316;
+  }
+
+  .modal {
+    animation: modalPopIn 0.2s ease-out forwards;
+  }
+
+  @keyframes modalPopIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95) translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(20px);
+  }
+
+  .stat-number {
+    font-variant-numeric: tabular-nums;
+  }
+}
