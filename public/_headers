@@ -1,3 +1,12 @@
+/index.html
+  X-Robots-Tag: noindex
+
+/404.html
+  X-Robots-Tag: noindex
+
+/404/
+  X-Robots-Tag: noindex
+
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
